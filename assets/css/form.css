@@ -1,0 +1,115 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+/*:root {
+    --primary: #15616D;
+    --secondary: #001524;
+    --default: #ffffff;
+        --primary: #083D77;
+}*/
+:root {
+    --primary: #0060b7;
+    --secondary: #1a1d20;
+    --default: #FFFFFF;
+}
+
+body {
+    background: linear-gradient(var(--primary), var(--secondary));
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--default);
+
+}
+.container .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    padding: 40px;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 10px var(--default)/*#393A3A;*/
+    
+}
+.container .form .form-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.container .form .form-head ion-icon {
+    font-size: 4em;
+}
+.container .form .form-head h1 {
+    font-size: 1.5em;
+    letter-spacing: 7px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+.container .form .form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--default);
+    border-radius: 10px;
+    background: transparent;
+    
+}
+
+
+
+.container .form .form-group input{
+    padding: 10px;
+    width: 290px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: var(--default);
+
+}
+.container .form .form-group ion-icon{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.container .form .form-group input:focus{
+    outline: none;
+}
+.container .form .form-group input::placeholder{
+    color: var(--default);
+}
+.container .form button{
+    padding: 10px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--default);
+    color: var(--secondary);
+    box-shadow: 2px 2px 2px #393A3A;
+    cursor: pointer;
+    transition: 0.5s linear;
+
+}
+
+
